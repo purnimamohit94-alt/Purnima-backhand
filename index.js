@@ -76,7 +76,7 @@ app.post("/api/wallet/tranzupi/create", async (req, res) => {
       purpose:        "Wallet Recharge - Purnima E-Sports",
       customer_name:  "Player",
       customer_email: decoded.email || "player@purnima.com",
-      webhook_url:    "https://purnima-tranzupi-backend.vercel.app/api/wallet/webhook",
+      webhook_url:    "https://purnima-backhand.vercel.app/api/wallet/webhook",
     };
 
     const response = await axios.post(
